@@ -11,6 +11,7 @@
 4) Insert(): Inserting a new key takes O(Logn) time. We add a new key at the end of the tree. IF new key is greater than its parent, then we don’t need to do anything. Otherwise, we need to traverse up to fix the violated heap property.
 
 *Noted: Delete only works at non-generic MinHeapInt() class, since negative infinity of generics<T> is undefined.*
+  
 5) Delete(): Deleting a key takes O(Logn) time. We replace the key to be deleted with minum infinite by calling decreaseKey(). After decreaseKey(), the minus infinite value must reach root, so we call extractMin() to remove the key.
   
 6) Count(): returns size of heap.
