@@ -24,9 +24,9 @@ public class MaxHeapInt
     //utility func to swap two element
     void swap(int aIndex, int bIndex)
     {
-        var temp = _elements[aIndex];
-        _elements[aIndex] = _elements[bIndex];
-        _elements[bIndex] = temp;
+        _elements[aIndex] ^= _elements[bIndex];
+		_elements[bIndex] ^= _elements[aIndex];
+        _elements[aIndex] ^= _elements[bIndex];
     }
 
 
