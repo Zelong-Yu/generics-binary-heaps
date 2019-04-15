@@ -17,3 +17,8 @@
 6) Count(): returns size of heap.
 
 Operations on Max Heap: replace min with max from above, and replace DecreaseKey() with IncreaseKey().
+
+Update 4/14/19
+---------------------------
+Trie.cs           List<char> implementation of Trie
+TrieArray.cs      char[] implementation of Trie. Fastest but takes more space
